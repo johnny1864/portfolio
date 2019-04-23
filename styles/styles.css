@@ -23,7 +23,6 @@ body{
 main {
     margin-top: -50px;
     line-height: 1;
-    min-width: 450px;
     margin: 0 auto;
 }
 
@@ -154,9 +153,13 @@ nav.scroll-nav {
 }
 
 .home-content {
-    margin-top: 40%;
+    
     animation: 1.2s fadeup 1s forwards;
     opacity: 0;
+}
+
+.down-arrow{
+    width: 100px;
 }
 
 @keyframes fadeup {
@@ -284,7 +287,7 @@ footer {
 }
 
 .social-links a:hover {
-    color: #fff;
+    color: gold;
 }
 
 /*****************
