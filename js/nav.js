@@ -1,13 +1,15 @@
-window.addEventListener('load', function(){
-    //HELPER FUNCTION
-    $(window).on('scroll', function(){
-        //console.log('scrolled');
-        //ADDS CLASS CENTER TO NAV IF SCROLLED PASS 80PX
-        if($(window).scrollTop() > 80){
-            $('nav').addClass('scroll-nav');
-            console.log('center');
-        }else{
-            $('nav').removeClass('scroll-nav');
-        }
-    });//END OF SCROLL EVENT LISTENER
-});//END OF ON LOAD FUNCTION
+"use strict";
+
+window.addEventListener("load", function() {
+  const nav = document.querySelector("nav");
+
+  window.addEventListener("scroll", function() {
+    let distanceScrolled = window.scrollY;
+
+    if (distanceScrolled > 75) {
+      nav.classList.add("scroll-nav");
+    } else {
+      nav.classList.remove("scroll-nav");
+    }
+  });
+}); // END OF LOAD FUNCTION
