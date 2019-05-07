@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johnny Rivera</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <main id='top'>
+        <div class="nav-container">
+            <nav class="fade">
+                <div id='nav-name'>JOHNNY RIVERA</div>
+                <ul class='navbar'>
+                    <li><a data-scroll href="index.html#top">Home</a></li>
+                    <li><a data-scroll href="index.html#about">About</a></li>
+                    <li><a data-scroll href="index.html#portfolio">Portfolio</a></li>
+                    <li><a data-scroll href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <section class=" page container projects" style='margin-top: 50px;'>
+            <h1 class="text-center">Spray Money</h1>
+            <div class="row">
+                <figure>
+                    <img src="images/spray-money.PNG" alt="Spray Money Site">
+                </figure>
+                <div class="overview">
+                    <h2>Overview</h2>
+                    <p>
+                        WordPress site with a custom resposive theme made for local artist Spray Money.
+                    </p>
+
+                    <strong>Technologies Used</strong>
+                    <ul>
+                        <li>WordPress</li>
+                        <li>PHP</li>
+                        <li>JavaScript</li>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <footer>
+            <div>
+                Johnny Rivers &copy; 2019
+            </div>
+            <ul class="social-links navbar">
+                <li><a href="https://github.com/johnny1864" target="_blank"><i class='fab fa-github-square'></i></a></li>
+                <li><a href="https://www.linkedin.com/in/johnny-rivera-6194b670/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href='mailto:johnny1864@yahoo.com'><i class="fas fa-envelope-square"></i></a></li>
+            </ul>
+        </footer>
+    </main>
+
+    <!-- SCROLL AND ANIMATION LIBRARIES -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="js/nav.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000
+        });
+
+        var scroll = new SmoothScroll('.navbar a[href*="#"]', {
+            speed: 400
+        });
+    </script>
+</body>
+</html>

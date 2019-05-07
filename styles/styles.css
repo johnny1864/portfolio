@@ -5,18 +5,19 @@
 *************/
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body,
 html {
-    margin: 0;
-    padding: 0;
     height: 100%;
     width: 100%;
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     text-align: center;
     background-color: #f8f8ff;
+    scroll-behavior: smooth;
     
 }
 
@@ -31,7 +32,7 @@ main {
 }
 
 section {
-    padding: 2em 0;
+    padding: 2rem 0;
     width: 100%;
 }
 
@@ -44,6 +45,10 @@ h2 {
     margin: 0 auto;
     border-bottom: 2px solid;
     padding-bottom: 5px;
+}
+
+h3{
+    margin-bottom: 1rem;
 }
 
 ul {
@@ -73,6 +78,13 @@ a:hover {
 
 .container {
     max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.page{
+    min-height: 100vh;
+    padding: 50px 0;
 }
 
 .about,
@@ -118,7 +130,7 @@ nav {
     width: 160px;
     font-size: 1.2em;
     display: none;
-    padding-left: 5em;
+    margin-left: 5em;
     animation: 1s;
 }
 
@@ -134,19 +146,18 @@ nav.scroll-nav {
 }
 
 /************
-    HOME
+    Jumbotron
 *************/
 
 .jumbotron {
-    height: 100vh;
     background: #31b0d5;
-    padding: 2em 1em;
     width: 100%;
 }
 
 .jumbotron h1,
 .jumbotron h3 {
     color: #fff;
+    margin: 2rem 0;
 }
 
 .jumbotron h1 {
@@ -172,7 +183,7 @@ nav.scroll-nav {
 @keyframes fadeup {
     100% {
         opacity: 1;
-        margin: 20%;
+        margin: 15%;
     }
 }
 
@@ -238,6 +249,20 @@ nav.scroll-nav {
     text-align: justify;
 }
 
+.projects p, .projects ul{
+    text-align: justify;
+}
+
+.projects ul{
+    list-style-type: disc;
+    padding-left: 1rem;
+}
+
+.projects figure{
+    max-width: 50%;
+    padding: 0 1rem;
+}
+
 /************
     CONTACT
 *************/
@@ -245,7 +270,7 @@ nav.scroll-nav {
 form {
     min-width: 450px;
     width: 50%;
-    margin: 0 auto;
+    margin: 1rem auto;
 }
 
 form input,

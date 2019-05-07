@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content= "width=device-width, initial-scale=1.0"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Johnny Rivera</title>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
-    <script src="js/nav.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
@@ -16,16 +16,16 @@
             <nav class="fade">
                 <div id='nav-name'>JOHNNY RIVERA</div>
                 <ul class='navbar'>
-                    <li><a href="#top">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a data-scroll href="#top">Home</a></li>
+                    <li><a data-scroll href="#about">About</a></li>
+                    <li><a data-scroll href="#portfolio">Portfolio</a></li>
+                    <li><a data-scroll href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
 
         <!-- HOME -->
-        <section class='home jumbotron'>
+        <section class='page jumbotron'>
             <div class="home-content fade-up">
                 <h1 class='pulse'>Johnny Rivera</h1>
                 <h3>Developer, Designer, &amp; Strategist</h3>
@@ -34,17 +34,17 @@
                 </a>
             </div>
         </section>
-        
+
         <hr>
-        
+
         <!-- ABOUT -->
-        <section class='about' id="about">
+        <section class='about page' id="about">
             <h2>About</h2>
             <div class="row">
-                <div id='portrait'>
+                <div id='portrait' data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <img src="./images/goat.jpg" alt="Selfie">
                 </div>
-                <p class="about-text">
+                <p class="about-text" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     Front-end developer with in creating responsive websites from scratch or PSD using HTML5, CSS3 and Javascript. I am also well versed with other web technologies like Bootstrap, SASS/SCSS and Angular 2+.
 
                     <span> Actual Picture coming soon!!! :)</span>
@@ -52,49 +52,109 @@
                 </p>
             </div>
         </section>
-        
+
         <hr>
 
         <!-- PROJECTS/PORFOLIO SECTION -->
-        <section class='projects' id="portfolio">
+        <section class='projects page' id="portfolio">
             <h2>Projects/Portfolio</h2>
-            <div class='projects-content'>
+
+            <div class="projects-content container">
                 <div class="row">
-                    <div class='project'>
-                       
+                    <figure>
+                        <a href="project-1.html">
+                        <img src="images/ur-moviedb.PNG" alt="Spray Money Site">
+                        </a>
+                    </figure>
+                    <div class="overview">
+                        <h3>Ur/MovieDB</h3>
+                        <p>
+                            Browser movies and search through by title or genre. Login and save favorite
+                            movies
+                        </p>
+
+                        <strong>Technologies Used</strong>
+                        <ul>
+                            <li>Angular</li>
+                            <li>Loopback/Express</li>
+                            <li>TMDB API</li>
+                            <li>MongoDB</li>
+                            <li>SCSS</li>
+                        </ul>
+                        <a href="project-1.html">Learn More</a>
                     </div>
-                    <p class="project-text">
-                        Retrives local weather data from an API and displays it to the user.
-                    </p>
                 </div>
-                <div class="row projects-content">
-                    <div class='project'>
+            </div>
+            <div class='projects-content container'>
+                <div class="row">
+                    <figure>
+                        <a href="project-2.html">
+                        <img src="images/spray-money.PNG" alt="Spray Money Site">
+                        </a>
+                    </figure>
+                    <div class="overview">
+                        <h3>Spray Money</h3>
+                        <p>
+                            WordPress site with a custom resposive theme made for local artist Spray Money.
+                        </p>
+
+                        <h3>Technologies Used</h3>
+                        <ul>
+                            <li>WordPress</li>
+                            <li>PHP</li>
+                            <li>JavaScript</li>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                        </ul>
                         
+                        <a href="project-2.html">Learn More</a>
                     </div>
-                    <p class="project-text">
-                        Displays a different random quotes everytime the user presses the new quoute button. This web app was built using JQuery.
+                </div>
+            </div>
+
+            <div class='projects-content container'>
+                <div class="row">
+                    <figure>
+                        <a href="project-3.html">
+                        <img src="images/bake-n-cake.PNG" alt="Spray Money Site">
+                        </a>
+                    </figure>
+                    <div class="overview">
+                        <h3>Bake-n-Cake</h3>
+                       <p>
+                        Custom web design project built and designed from scratch for fictional bakery. 
                     </p>
+
+                        <h3>Technologies Used</h3>
+                        <ul>
+                            <li>WordPress</li>
+                            <li>PHP</li>
+                            <li>JavaScript</li>
+                            <li>HTML5</li>
+                        </ul>
+                        <a href="project-3.html">Learn More</a>
+                    </div>
                 </div>
             </div>
         </section>
         <hr>
 
         <!-- CONTACT -->
-        <section class='contact' id="contact">
+        <section class='contact page' id="contact">
             <h2>Contact Me</h2>
-            <form method="POST" name="contact" data-netlify="true">
+            <form data-aos="fade-up" method="POST" name="contact" data-netlify="true">
                 <div id='contact-info row'>
                     <input type="text" name="name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
                 </div>
                 <textarea placeholder="Message" name="message" id="message" cols="30" rows="10"></textarea>
-                <div style="margin-left: 15px;" data-netlify-recaptcha="true"></div>
+
                 <input id='button' type="submit" value="Send">
             </form>
         </section>
-        
+
         <hr>
-        
+
         <footer>
             <div>
                 Johnny Rivers &copy; 2019
@@ -106,6 +166,20 @@
             </ul>
         </footer>
     </main>
-    
+
+    <!-- SCROLL AND ANIMATION LIBRARIES -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="js/nav.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000
+        });
+
+        var scroll = new SmoothScroll('.navbar a[href*="#"]', {
+            speed: 400
+        });
+    </script>
 </body>
 </html>

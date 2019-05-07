@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johnny Rivera</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <main id='top'>
+        <div class="nav-container">
+            <nav class="fade">
+                <div id='nav-name'>JOHNNY RIVERA</div>
+                <ul class='navbar'>
+                    <li><a data-scroll href="#top">Home</a></li>
+                    <li><a data-scroll href="#about">About</a></li>
+                    <li><a data-scroll href="#portfolio">Portfolio</a></li>
+                    <li><a data-scroll href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <section style='margin-top: 50px;' class="page container projects">
+           <h2 class="text-center">Ur/MovieDB</h2>
+            <div class="row">
+                <figure>
+                    <img src="images/ur-moviedb.PNG" alt="Spray Money Site">
+                </figure>
+                <div class="overview">
+                    <h3>Overview</h3>
+                    <p>
+                        Browser movies and search through by title or genre. Login and save favorite 
+                        movies
+                    </p>
+            
+                    <strong>Technologies Used</strong>
+                    <ul>
+                        <li>Angular</li>
+                        <li>Loopback/Express</li>
+                        <li>TMDB API</li>
+                        <li>MongoDB</li>
+                        <li>SCSS</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <footer>
+            <div>
+                Johnny Rivers &copy; 2019
+            </div>
+            <ul class="social-links navbar">
+                <li><a href="https://github.com/johnny1864" target="_blank"><i class='fab fa-github-square'></i></a></li>
+                <li><a href="https://www.linkedin.com/in/johnny-rivera-6194b670/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href='mailto:johnny1864@yahoo.com'><i class="fas fa-envelope-square"></i></a></li>
+            </ul>
+        </footer>
+    </main>
+
+    <!-- SCROLL AND ANIMATION LIBRARIES -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="js/nav.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000
+        });
+
+        var scroll = new SmoothScroll('.navbar a[href*="#"]', {
+            speed: 400
+        });
+    </script>
+</body>
+</html>
