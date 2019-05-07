@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,800,100');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300, 400,800,100');
 
 /************
     LAYOUT
@@ -235,6 +235,10 @@ nav.scroll-nav {
     background-color: #f5f5f5;
 }
 
+h3{
+    font-weight: 400;
+}
+
 .projects-content {
     padding-top: 3em;
 }
@@ -251,6 +255,7 @@ nav.scroll-nav {
 
 .projects p, .projects ul{
     text-align: justify;
+    padding: 0 0 1rem;
 }
 
 .projects ul{
