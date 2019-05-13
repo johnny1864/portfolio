@@ -49,6 +49,7 @@ h2 {
 
 h3{
     margin-bottom: 1rem;
+    text-align: justify;
 }
 
 ul {
@@ -68,6 +69,10 @@ a {
 
 a:hover {
     color: gold;
+}
+
+.sub-heading{
+    text-decoration: underline;
 }
 
 .row {
@@ -275,7 +280,7 @@ h3{
 form {
     min-width: 450px;
     width: 50%;
-    margin: 1rem auto;
+    margin: 2rem auto 0;
 }
 
 form input,
