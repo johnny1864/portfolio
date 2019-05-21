@@ -274,10 +274,31 @@ nav.scroll-nav {
 }
 
 /************
+    BANNER
+*************/
+
+.banner{
+    background-color: #31b0d5;
+    padding: 50px 0;
+    color: #fff;
+}
+
+.banner h2{
+    color: #fff;
+}
+
+.banner span{
+    font-size: 1.5rem;
+}
+
+.
+
+
+/************
     CONTACT
 *************/
 
-form {
+ form {
     min-width: 450px;
     width: 50%;
     margin: 2rem auto 0;
