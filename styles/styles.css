@@ -248,9 +248,8 @@ nav.scroll-nav {
     text-align: justify;
 }
 
-
-.codepen {
-    width: 50%;
+.projects-content p a{
+    color: #31b0d5;
 }
 
 .project-text {
