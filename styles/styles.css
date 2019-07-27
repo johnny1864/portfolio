@@ -125,8 +125,8 @@ nav {
 .navbar {
     display: flex;
     justify-content: space-around;
-    width: 40%;
-    min-width: 400px;
+/*    width: 40%;*/
+/*    min-width: 400px;*/
 }
 
 .navbar li a {
